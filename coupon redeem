@@ -1,0 +1,14 @@
+import random
+if main_choice ==3:
+    print("get coupons for next order to reduced price")
+    code_char=["-->>BTS7PTD","-->>EXO9SHOT","-->BP4LA","->TWICE9TT","->JELENA2NLU","->EDSHEERAN1"]
+    for get in code_char:
+                    print(get)
+    coup=open("C:/Users/w2s/Pictures/Camera Roll/COUPON.txt","r")
+    str=" "
+    while str:
+            str=coup.readline()
+            print(str,end=" ")
+    coup.close()
+    random_num= random.choice(coup_char)
+    print("your coupon is : ",random_number)
