@@ -1,0 +1,37 @@
+if main_choice ==1:         
+    print("1.samsung-model-s21")
+    print("2.APPLE -iPhone -12 -Mini")
+    print("3.realme-C21Y")
+    print("4.vivo Y20T")
+    sh_choice=input("choose the model mention above\n enter the number of it : ")
+    if sh_choice== "1" :
+             choice_samsung=open(r"C:/Users/w2s/Pictures/Camera Roll/samsung-model-s21.txt","r")
+             str=" "
+             while str:
+                    str=choice_samsung.readline()
+                    print(str,end=" ")
+             choice_samsung.close()
+    elif sh_choice== "2" :
+              choice_APPLE=open(r"C:/Users/w2s/Pictures/Camera Roll/APPLE -iphone -12 -Mini.txt","r")
+             str=" "
+             while str:
+                    str=choice_APPLE.readline()
+                    print(str,end=" ")
+             choice_APPLE.close()
+    elif sh_choice== "3" :
+              choice_realme=open(r"C:/Users/w2s/Pictures/Camera Roll/realme-C21Y.txt","r")
+              str=" "
+              while str:
+                    str=choice_realme.readline()
+                    print(str,end=" ")
+              choice_realme.close()
+    elif sh_choice== "4" :
+              choice_vivo=open(r"C:/Users/w2s/Pictures/Camera Roll/vivo Y20T.txt","r")
+              str=" "
+              while str:
+                    str=choice_vivo.readline()
+                    print(str,end=" ")
+              choice_vivo.close()
+    else:
+         sys.exit("look at recommendation for bestselling phones")
+             
