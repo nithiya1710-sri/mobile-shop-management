@@ -1,0 +1,19 @@
+elif main_choice ==4:
+    print("BESTSELLING PHONE MENTION BELOW")
+    rec=open("C:/Users/w2s/Pictures/Camera Roll/recommendation.txt","r")
+    str=" "
+    while str:
+         str=rec.readline()
+         print(str,end=" ")
+    rec.close()
+    print("do you want to search? ")
+    choice_sh=input("yes or no  : ")
+    if choice_sh==”yes”:
+        choice_APPLE=open(r"C:/Users/w2s/Pictures/Camera Roll/APPLE -iphone -12 -Mini.txt","r")
+        str=" "
+        while str:
+                    str=choice_APPLE.readline()
+                    print(str,end=" ")
+        choice_APPLE.close()    
+    else:
+        sys.exit("back to home screen")
