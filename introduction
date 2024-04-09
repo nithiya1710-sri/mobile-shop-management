@@ -1,0 +1,13 @@
+def pro_intro():
+wel=open(&quot;C:/Users/w2s/Pictures/Camera Roll/welcome.txt&quot;,&quot;r&quot;)
+wel_rec=&quot; &quot;
+while wel_rec:
+wel_rec=wel.readline()
+print(wel_rec)
+pro_intro()
+print(&quot;~~~~~~~~~~processing~~~~~~~~~~~&quot;)
+import sys
+intro=print(&quot;welcome To Mobile Shop&quot;)
+import sys
+intro=print(&quot;welcome To Mobile Shop&quot;)
+print(&quot;login to our shop&quot;)
