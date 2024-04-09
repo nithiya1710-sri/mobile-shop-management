@@ -1,0 +1,41 @@
+login=input("if you are old customer enter (yes/no) :")
+if login=="yes":
+    name=input("enter your user name")
+    shop=open("C:/Users/w2s/Pictures/Camera Roll/mobile-shop.txt","r")
+    sh_dt=shop.read()
+    if name in sh_dt:
+         print("enter phone number for further login")
+         phno=int(input("enter the phone number: "))
+         str_phno=str(phno)
+         length=len(str_phno)
+         if length==10:
+             if str_phno in sh_dt:
+                  print("successful entered")
+             else:
+                  sys.exit("user name doesn't match with phone number ")
+         else:  
+            print("invalid phone number enter 12 digit number")
+    else:
+         sys.exit("username not found :( try again!")
+elif login=="no":
+    print("create a new account")
+    v="     "
+    usernm=input("enter you are full name  :")
+    phonenumber=input("enter your phone number :")
+     shop_id=open("C:/Users/w2s/Pictures/Camera Roll/mobile-shop.txt","a")
+    shop_append=shop_id.write(usernm+v+phonenumber+"\n")
+    shop_id.close()
+    print(" account created successfully ")
+    print(" enjoy shopping ")
+#MAINMENU
+print("hello there! want to look mobile look at the catogery")
+print("1.search")
+print("2.add to cart")
+print("3.offer zone")
+print("4.recommendation")
+print("5.payment")
+print(“6.customer rating”)
+print(“7.customer care”)
+print("8..quit")
+
+main_choice=int(input("Enter Number Mention above (upto 8) : "))
