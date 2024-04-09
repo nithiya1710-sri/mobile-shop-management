@@ -1,0 +1,26 @@
+if main_choice ==2:
+    string=” “
+    def addcart():
+        add_option=["**1.samsung-model-s21","**2.APPLE -iphone -12 -Mini","**3.realme-C21Y","**4.vivo Y20T"]
+        for a in add_option:
+            print(a)
+        add_choice=input("type the phone number to be added in your cart")
+        cart_file=open("C:/Users/w2s/Pictures/Camera Roll/add.txt","a")
+        if add_choice=="1":
+            print("samsung model s21 is successfully added to your cart")
+            cart_add=cart_file.write(string)
+        elif add_choice=="2":
+            print("APPLE iphone 12 Mini is sucessfully added to your cart")
+            cart_add=cart_file.write(string)
+        elif add_choice=="3":
+            print("realme C21Y is successfully added to your cart")
+            cart_add=cart_file.write(string)
+        elif add_choice=="4":
+            print(" vivo Y20T is successfully added to your cart")
+            cart_add=cart_file.write()
+        else:
+            sys.exit("phone is not available")
+        cart_file.close()    
+    addcart()
+
+
