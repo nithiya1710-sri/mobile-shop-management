@@ -1,0 +1,28 @@
+elif   main_choice ==7:
+         custom=["-->>1. about us" >>2. contact us","-->>3.shipping policy"] 
+        for cus in custom:
+                 print(cus)
+       
+      cus_care=input("type the number you want look : ")
+      if cus_care=="1":
+                cus_abt=open("C:/Users/w2s/Pictures/Camera Roll/about us.txt","r")
+                str="
+                while str:
+                            str=cus_abt.readline() 
+                           print (str, end=" ") 
+                cus_abt.close() 
+   	
+     elif cus_care=="2":
+                 cus_con=open("C:/Users/w2s/Pictures/Camera Roll/contact us.txt","r")
+                 str="  “
+                 while str: 
+                           str=cus_con.readline() 
+                           print (str, end=" ")
+               cus_con.close()
+     elif cus_care=="3":
+               cus svy=open("C:/Users/w2s/Pictures/Camera Roll/shipping policy.txt","r") 
+               str=" "
+              while str: 
+                      str=cus_svy.readline() 
+                     print(str, end=" ")
+              cus_svy.close()
