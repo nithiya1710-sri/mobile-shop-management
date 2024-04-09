@@ -1,0 +1,6 @@
+elif  main_choice ==8:
+            Quit=input("are you really want to quit (yes or no) :")
+            if Quit=="no":
+                  print("continue shopping")
+          else:
+                   sys.exit("shop again great day")
