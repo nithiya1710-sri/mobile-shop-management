@@ -1,0 +1,62 @@
+if main_choice ==5:        
+        items={"samsung galaxgy s21":64999,\
+               "APPLE iphone mini 12":49999,\
+               "realme-C21Y":10499,\
+               "vivo Y20T":16990}
+        for i in items:
+            print(i,":",items[i])
+        choice_phone=eval(input("enter the price of the phone mentioned above as list :"))
+        total_amount=sum(choice_phone)
+        print("your total paying amount is",total_amount)
+        coup=input("Do you want to use coupon ? (y/n)")
+        if coup=="yes":
+            token=input("enter your coupon :")
+            if token=="BTS7PTD":
+           total_amount=total_amount*0.8
+                    print("you price now ",total_amount)
+            elif token=="EXO9SHOT":
+                    total_amount=total_amount-3000
+                    print("you price now ",total_amount)
+            elif token=="BP4LA":
+                    total_amount=total_amount*0.5
+                    print("you price now ",total_amount)
+            elif token=="TWICE9TT":
+                    total_amount=total_amount-1000
+                    print("you price now ",total_amount)
+            elif token=="JELENA2NTU":
+                    total_amount=total_amount*0.25
+                    print("you price now ",total_amount)
+            elif token=="EDSHEERAN1":
+                    total_amount=total_amount-5000
+                    print("you price now ",total_amount)
+            else:
+                    sys.exit("coupon not found")
+        username=input("type your username here  :")
+        phonenum=input("type your phone number here : ")
+        shop_file=open("C:/Users/w2s/Pictures/Camera Roll/mobile-shop.txt","r")
+        file_check=shop_file.read()
+        if phonenum in file_check:
+            print("entered successfully")
+            card=input("Type your card number :")
+            if card[0]=="4":
+                print("visa card")
+            elif card[0]=="5":
+                print("Master card")
+            else:
+                print("other credit/debit card")
+        else:
+            print("invalid phone number")        
+         print("your transaction price is Rs",total_amount)           
+        card_name=input("enter the card holder name in uppercase :")
+        expire=input("type card expiry month/year[example:12/24] : ")
+        cvv=input("type your cvv number")
+        if len(cvv)==3:
+                print("card details entered successfully")
+        else:
+                print("check the cvv number :")
+       sub=input("do you want to submit ? (yes/no) :")
+       if sub=="yes":
+             print("your transcation of is sucessful of Rs",total_amount)
+             print(" -----THANK YOU FOR SHOPPING :)---- ")
+      else:
+            sys.exit("are you sure want to stop transaction")
