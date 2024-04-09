@@ -1,0 +1,15 @@
+elif main_choice ==6:
+        custom_rate=input("if you like to rate us $ 1-5 times :") 
+       if custom_rate=="$$$$$":
+                 print("thank you for 5 stars,  very happy") 
+       elif custom_rate=="$$$$": 
+               print("thank you for stars,  happy")
+       elif custom_rate=="$$$": 
+              print("thank you for 3 stars, better")
+       elif custom_rate=="$$": 
+             print("thank you for 2 stars, we will try to do better")
+      elif custom_rate=="$":
+           print("thank you for 1 stars, we will improve a lot") 
+     else:
+           feed=input("give us feed back")
+           print (feed)  
